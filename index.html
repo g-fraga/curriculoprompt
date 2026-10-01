@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Currículo de Gustavo Fraga da Silva – estudante de Análise e Desenvolvimento de Sistemas (ADS)">
+<title>Gustavo Fraga da Silva – Currículo | ADS</title>
+<style>
+  :root {
+    --ink: #17202e;
+    --muted: #5b6676;
+    --navy: #13233f;
+    --accent: #2b6cb0;
+    --line: #dde3ec;
+    --bg: #eef1f6;
+    --paper: #ffffff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.6;
+  }
+  a { color: inherit; }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+
+  .page {
+    max-width: 1000px;
+    margin: 32px auto;
+    background: var(--paper);
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    box-shadow: 0 4px 24px rgba(19, 35, 63, .12);
+  }
+
+  /* Coluna lateral */
+  aside {
+    background: var(--navy);
+    color: #e6ecf5;
+    padding: 40px 28px;
+  }
+  aside h2 {
+    font-size: 1rem;
+    margin: 28px 0 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    color: #fff;
+  }
+  aside h2:first-of-type { margin-top: 0; }
+  aside ul { list-style: none; margin: 0; padding: 0; }
+  aside li { margin-bottom: 10px; font-size: .93rem; overflow-wrap: anywhere; }
+  aside .label { display: block; font-size: .8rem; color: #9fb3d1; }
+  aside .course { font-weight: 600; color: #fff; }
+
+  /* Conteúdo principal */
+  main { padding: 40px 40px 40px 36px; }
+  header { margin-bottom: 8px; }
+  header h1 { margin: 0; font-size: 2.1rem; line-height: 1.2; color: var(--navy); }
+  header p {
+    margin: 6px 0 0;
+    font-size: 1.1rem;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  section { margin-top: 30px; }
+  section h2 {
+    font-size: 1.15rem;
+    margin: 0 0 12px;
+    color: var(--navy);
+    padding-left: 12px;
+    border-left: 4px solid var(--accent);
+  }
+  .about { color: var(--ink); max-width: 68ch; }
+
+  .item { margin-bottom: 22px; }
+  .item:last-child { margin-bottom: 0; }
+  .item-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 2px 16px; }
+  .item h3 { margin: 0; font-size: 1.02rem; }
+  .period {
+    font-size: .88rem;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .company { margin: 0 0 6px; color: var(--accent); font-weight: 600; font-size: .95rem; }
+  .item ul { margin: 0; padding-left: 20px; }
+  .item li { margin-bottom: 4px; font-size: .95rem; }
+  .tag-now {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 1px 8px;
+    border-radius: 999px;
+    background: #dbeafe;
+    color: #1e4e8c;
+    font-size: .75rem;
+    font-weight: 600;
+    vertical-align: middle;
+  }
+
+  .skills { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 0; padding: 0; }
+  .skills li {
+    background: #eef3fa;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: .88rem;
+  }
+  .note { margin: 10px 0 0; font-size: .88rem; color: var(--muted); }
+
+  /* Celular */
+  @media (max-width: 760px) {
+    .page { grid-template-columns: 1fr; margin: 0; }
+    aside { padding: 28px 22px; }
+    main { padding: 28px 22px; }
+    header h1 { font-size: 1.7rem; }
+    .period { white-space: normal; }
+  }
+
+  /* Impressão / PDF */
+  @media print {
+    body { background: #fff; }
+    .page { margin: 0; box-shadow: none; max-width: none; }
+    aside { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .item { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <aside>
+    <h2>Contato</h2>
+    <ul>
+      <li><span class="label">E-mail</span><a href="mailto:gustavofraga1@outlook.com">gustavofraga1@outlook.com</a></li>
+      <li><span class="label">Telefone</span><a href="tel:+5548992074555">(48) 99207-4555</a></li>
+    </ul>
+
+    <h2>Formação</h2>
+    <ul>
+      <li>
+        <span class="course">Análise e Desenvolvimento de Sistemas</span>
+        Ensino Superior (Tecnólogo)<br>
+        FMP – Faculdade Municipal de Palhoça
+        <span class="label">Conclusão prevista: 2028</span>
+      </li>
+    </ul>
+
+    <h2>Competências profissionais</h2>
+    <ul>
+      <li>Organização e controle de documentos</li>
+      <li>Elaboração de relatórios e planilhas</li>
+      <li>Rotinas administrativas e de RH</li>
+      <li>Atendimento ao público</li>
+      <li>Negociação e prospecção de clientes</li>
+      <li>Apoio ao planejamento de treinamentos</li>
+    </ul>
+  </aside>
+
+  <main>
+    <header>
+      <h1>Gustavo Fraga da Silva</h1>
+      <p>Estudante de Análise e Desenvolvimento de Sistemas</p>
+    </header>
+
+    <section aria-labelledby="perfil">
+      <h2 id="perfil">Perfil profissional</h2>
+      <p class="about">
+        Estudante de Análise e Desenvolvimento de Sistemas (ADS) na FMP, com previsão de conclusão em 2028.
+        Busco oportunidade de estágio ou primeiro emprego na área de tecnologia para aplicar o que estou
+        aprendendo, evoluir na prática e crescer profissionalmente. Trago experiência com rotinas
+        administrativas, organização de informações, atendimento e trabalho em equipe.
+      </p>
+    </section>
+
+    <section aria-labelledby="formacao">
+      <h2 id="formacao">Formação acadêmica</h2>
+      <div class="item">
+        <div class="item-head">
+          <h3>Análise e Desenvolvimento de Sistemas</h3>
+          <span class="period">Conclusão: 2028</span>
+        </div>
+        <p class="company">FMP – Faculdade Municipal de Palhoça</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="experiencia">
+      <h2 id="experiencia">Experiência profissional</h2>
+
+      <article class="item">
+        <div class="item-head">
+          <h3>Estagiário – Corregedoria e B1 (Recursos Humanos)<span class="tag-now">Atual</span></h3>
+        </div>
+        <p class="company">Corpo de Bombeiros Militar de Santa Catarina (CBMSC)</p>
+        <ul>
+          <li>Apoio na análise e tramitação de processos administrativos e disciplinares.</li>
+          <li>Organização e controle de documentos e registros.</li>
+          <li>Acompanhamento de procedimentos internos e gestão de informações funcionais do efetivo.</li>
+          <li>Suporte às rotinas de RH e atendimento de demandas administrativas relacionadas ao pessoal.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <div class="item-head">
+          <h3>Estagiário – B3 (Pessoal) e B4 (Logística)</h3>
+          <span class="period">1 ano e 6 meses</span>
+        </div>
+        <p class="company">Corpo de Bombeiros Militar de Santa Catarina (CBMSC)</p>
+        <ul>
+          <li>Controle e organização de documentos, efetivo, materiais e patrimônio.</li>
+          <li>Apoio no planejamento e organização de cursos, treinamentos e capacitações.</li>
+          <li>Atividades administrativas e elaboração de relatórios e planilhas.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <div class="item-head">
+          <h3>Atendente</h3>
+          <span class="period">6 meses</span>
+        </div>
+        <p class="company">LigueMais Telecom</p>
+        <ul>
+          <li>Venda de telefonia fixa e sistemas de centralização de comunicação.</li>
+          <li>Prospecção e atendimento de clientes, com apresentação de soluções e negociação.</li>
+          <li>Acompanhamento do processo comercial.</li>
+        </ul>
+      </article>
+
+      <article class="item">
+        <div class="item-head">
+          <h3>Atendimento / Retenção de Alunos Calouros</h3>
+          <span class="period">1 mês</span>
+        </div>
+        <p class="company">Universidade do Sul de Santa Catarina (UNISUL)</p>
+        <ul>
+          <li>Atendimento e suporte a alunos calouros, esclarecendo dúvidas e acompanhando demandas acadêmicas e administrativas.</li>
+          <li>Atuação na retenção e fidelização de alunos, contribuindo para sua permanência e satisfação.</li>
+        </ul>
+      </article>
+    </section>
+
+  </main>
+</div>
+</body>
+</html>
